@@ -1,0 +1,82 @@
+body{
+    font-family: 'Poppins';
+    align-content: center;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 72px;
+    font-weight: 900;
+    text-shadow: 5px 5px #00000030;
+}
+h2{
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(160, 160, 160);
+    margin-bottom: 70px;
+}
+h3{
+    font-size: 36px;
+    font-weight: 400;
+    color: gainsboro;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px;
+}
+a:hover{
+    color:gray;
+}
+.HeaderFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0;
+}
+.MainFlex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.HeaderLinks{
+    margin: 0 0;
+}
+.button1{
+    width: 200px;
+    height: 60px;
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: black;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+.button1:hover{
+    background-color: gray;
+    color: white;
+}
+.button2{
+    width: 600px;
+    height: 160px;
+    background-color: rgb(68, 85, 92);
+    border-style: none;
+    border-radius: 16px;
+    font-family: 'Poppins';
+    font-size: 48px;
+    color: white;
+}
+.button2:hover{
+    background-color: white;
+    color: gray;
+    border-style: solid;
+    border-width: 2px;
+    border-color:black;
+}
+@media (min-width: 1510px) {
+    .HeaderLinks{
+        margin: 0 300px;
+    }
+}

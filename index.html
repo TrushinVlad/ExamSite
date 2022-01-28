@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>[201-324] Трушин Владислав Алексеевич (28.01.2022)</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header class="HeaderFlex">
+            <h3><b style="color:black">Brit</b>lex</h3>
+            <div class="HeaderLinks">
+                <a href="#">Home</a>
+                <a href="#">Skills</a>
+                <a href="#">About Us</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contacts</a>
+            </div>
+            <form action="#" target="_blank">
+                <button class="button1">Let's Talk</button>
+            </form>
+        </header>
+        <main class="MainFlex">
+            <section style="max-width: 650px; margin: 0 50px;">
+                <div style="display: flex; align-items: center; margin-top: 100px">
+                    <h1>Learn Any Foreign Language</h1>
+                    <img src="images/light.png" width="200" height="200" alt="light">
+                </div>
+                <h2>With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</h2>
+                <form name="start" method="POST" data-netlify="true">
+                    <button class="button2" id="Butt2">Get started</button>
+                </form>
+                <script>
+                    document.getElementById("Butt2").onclick = function(e){
+                        console.log('Form successfully submitted')
+                        const handleSubmit = (e) => {
+                        e.preventDefault()
+                        let myForm = document.getElementById('start');
+                        let formData = new FormData(myForm)
+                        fetch('/', {
+                            method: 'POST',
+                            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                            body: new URLSearchParams(formData).toString()
+                        }).then(() => console.log('Form successfully submitted')).catch((error) =>
+                            alert(error))
+                        }
+                        alert("Yeah, we're started!");
+                    }
+                </script>
+            </section>
+            <section>
+                <img src="images/logo.png" width="1000" style="margin: 0 50px;" alt="Logo">
+            </section>
+        </main>
+    </body>
+</html>
